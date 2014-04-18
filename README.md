@@ -1,7 +1,7 @@
 Backbone Boilerplate
 ===========
 
-Boilerplate for the front-end development.
+Boilerplate for creating web frontend in Backbone.js. 
 
 * CoffeeScript
 * Sass/Compass
