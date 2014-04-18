@@ -1,13 +1,13 @@
 Backbone Boilerplate
 ===========
 
-Boilerplate for frontend.
+Boilerplate for the front-end development.
 
-* Coffeescript
+* CoffeeScript
 * Sass/Compass
 * Backbone
-* Backbone.marionette
-* Backbone.stickit
+* Backbone.Marionette
+* Backbone.Stickit
 * Lo-dash
 * Zepto
 * Handlebars
