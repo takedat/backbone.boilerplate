@@ -26,6 +26,11 @@ $ grunt
 
 Access http://localhost:8888/
 
+~~~
+$ touch assets/coffee/main/main.coffee
+~~~
+
+
 * assets/coffee/main/  ... Starting point of the app.
 * assets/dist/json/    ... Mockup json files.
 * assets/dist/templates/  ...  Template Files.
