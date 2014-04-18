@@ -1,0 +1,15 @@
+{
+	"name": "App",
+	"version": "0.0.2",
+	"dependencies": {
+		"jquery": "*",
+		"zepto": "*",
+		"backbone": "*",
+		"backbone.marionette": "*",
+		"backbone.stickit": "*",
+		"lodash": "*",
+		"handlebars": "*",
+		"requirejs": "*",
+		"almond": "*"
+	}
+}

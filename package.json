@@ -1,0 +1,20 @@
+{
+	"name": "App",
+	"version": "0.0.2",
+	"devDependencies": {
+		"grunt": "latest",
+		"grunt-regarde": "latest",
+		"grunt-contrib-connect": "latest",
+		"grunt-contrib-livereload": "latest",
+		"grunt-contrib-watch": "latest",
+		"grunt-contrib-uglify": "latest",
+		"grunt-contrib-concat": "latest",
+		"grunt-contrib-jshint": "latest",
+		"grunt-contrib-compass": "latest",
+		"grunt-contrib-cssmin": "latest",
+		"grunt-contrib-csslint": "latest",
+		"grunt-contrib-coffee": "latest",
+		"grunt-contrib-requirejs": "latest",
+		"grunt-contrib-compress": "latest"
+	}
+}
