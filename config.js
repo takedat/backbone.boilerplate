@@ -2,11 +2,11 @@ require.config({
 	urlArgs: 'bust=' + (new Date()).getTime(),
 	paths: {
 		'jquery' : '../vendors/zepto/zepto',
-		'underscore': '../vendors/lodash/dist/lodash',
+		'underscore': '../vendors/lodash/lodash',
 		'backbone': '../vendors/backbone/backbone',
-		'marionette': '../vendors/backbone.marionette/lib/backbone.marionette',
+		'marionette': '../vendors/backbone.marionette/backbone.marionette',
 		'handlebars': '../vendors/handlebars/handlebars',
-		'text': '../vendors/text'
+		'text': '../vendors/requirejs-text/text'
 	},
 	shim: {
 		'jquery': {

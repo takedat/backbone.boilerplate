@@ -1,11 +1,5 @@
 'use strict';
 
-var path = require('path');
-var lrSnippet = require('grunt-contrib-livereload/lib/utils').livereloadSnippet;
-var folderMount = function folderMount(connect, point) {
-	return connect.static(path.resolve(point));
-};
-
 module.exports = function (grunt) {
 	grunt.initConfig({
 		watch: {
@@ -83,10 +77,19 @@ module.exports = function (grunt) {
 		connect: {
 			server: {
 				options: {
-					port: 8888,
-					middleware: function(connect, options) {
-						return [lrSnippet, folderMount(connect, '.')];
-					}
+					port: 8888
+				}
+			}
+		},
+		bower: {
+			install: {
+				options: {
+					targetDir:'assets/dist/scripts/vendors',
+					layout: 'byComponent',
+					install: true,
+					verbose: true,
+					cleanBowerDir: true,
+					cleanTargetDir: true
 				}
 			}
 		}
@@ -94,7 +97,6 @@ module.exports = function (grunt) {
 
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-contrib-connect');
-	grunt.loadNpmTasks('grunt-contrib-livereload');
 	grunt.loadNpmTasks('grunt-contrib-uglify');
 	grunt.loadNpmTasks('grunt-contrib-jshint');
 	grunt.loadNpmTasks('grunt-contrib-compass');
@@ -104,9 +106,12 @@ module.exports = function (grunt) {
 	grunt.loadNpmTasks('grunt-contrib-coffee');
 	grunt.loadNpmTasks('grunt-contrib-requirejs');
 	grunt.loadNpmTasks('grunt-contrib-compress');
+	grunt.loadNpmTasks('grunt-bower-task');
 
 	grunt.registerTask('js', ['coffee']);
 	grunt.registerTask('css', ['compass']);
+	grunt.registerTask('default', ['bower:install']);
 	grunt.registerTask('default', ['connect','watch:all']);
+
 	//grunt.registerTask('dist', ['livereload-start', 'connect', 'regarde']);
 };

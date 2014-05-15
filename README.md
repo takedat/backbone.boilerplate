@@ -17,10 +17,11 @@ Boilerplate for creating web frontend in Backbone.js.
 
 Getting Started
 ===========
+[Grunt](http://gruntjs.com/) and [node.js](http://nodejs.org/) is required to get started.
 
 ~~~
 $ npm install
-$ bower install
+$ grunt bower:install
 $ grunt
 ~~~
 
